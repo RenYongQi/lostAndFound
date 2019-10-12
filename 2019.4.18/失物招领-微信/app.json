@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/notice/notice",
+    "pages/fbnotice/fbnotice",
+    "pages/Me/Me",
+    "pages/myfb/myfb",
+    "pages/Rlease/Rlease",
+    "pages/Search/Search",
+    "pages/index/index",
+    "pages/feedback/feedback",
+    "pages/person/person",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2add9c",
+    "navigationBarTitleText": "失物招领",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "校内",
+        "iconPath": "/img/School.png",
+        "selectedIconPath": "/img/School_color.png"
+      },
+      {
+        "pagePath": "pages/Rlease/Rlease",
+        "text": "发布",
+        "iconPath": "/img/Release.png",
+        "selectedIconPath": "/img/Release_color.png"
+      },
+      {
+        "pagePath": "pages/Me/Me",
+        "text": "我",
+        "iconPath": "/img/Me.png",
+        "selectedIconPath": "/img/Me_color.png"
+      }
+    ]
+  }
+}

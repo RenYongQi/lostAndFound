@@ -1,0 +1,63 @@
+/* pages/fbnotice/fbnotice.wxss */
+page{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  margin-top: 70rpx;
+  width: 80%;
+
+}
+
+.title text{
+  font-size:36rpx;
+  color:#474646;
+}
+
+.title input{
+  margin-top: 30rpx;
+  border: 1rpx solid #f1f1f1;
+  padding-left: 30rpx;
+  font-size: 32rpx;
+  height: 80rpx;
+  display: block;
+}
+
+.theContent{
+  margin-top: 70rpx;
+  width: 80%;
+}
+
+.theContent text{
+  font-size:36rpx;
+  color: #474646;
+}
+
+.theContent textarea{
+  width: 90%;
+  margin-top:30rpx;
+  border: 1rpx solid #f1f1f1;
+  padding: 30rpx;
+  font-size: 32rpx;
+}
+
+.submit_btn{
+  width: 400rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin-top: 100rpx;
+  background: #2add9c;
+  color: white;
+  border-radius: 50rpx;
+  clear: both;
+}
+
+.submit_btn::after{
+  border: none;
+}

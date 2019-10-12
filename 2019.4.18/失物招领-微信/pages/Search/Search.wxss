@@ -1,0 +1,124 @@
+/* pages/Search/Search.wxss */
+.serach{
+  height: 80rpx;
+  width: 715rpx;
+  padding: 20rpx;
+  position: relative;
+}
+
+.serachonetext{
+  float: left;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  width: 140rpx;
+  border: 1rpx solid #f1f1f1;
+  border-right: none;
+  font-size: 32rpx;
+}
+
+.serach input{
+  float: left;
+  background: white;
+  height: 80rpx;
+  width: 400rpx;
+  text-align: center;
+  border: 1rpx solid #f1f1f1;
+  border-right: none;
+  font-size: 32rpx;
+}
+
+.serach_btn{
+  height: 84rpx;
+  text-align: 84rpx;
+  font-size: 32rpx;
+  border: 1rpx solid #f1f1f1;
+  background: #f5f5f5;
+  border-radius: 0 10rpx 10rpx 0;
+}
+.serach_btn::after{
+  border: none;
+}
+
+.content{
+  height: 1000rpx;
+  width: 700rpx;
+  margin: 30rpx auto;
+  clear: both;
+}
+
+
+.content_msg{
+  width: 100%;
+  background: white;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #e4e0e0;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+
+
+.userImg{
+  float: left;
+}
+
+.userImg image{
+  margin-top: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+}
+
+.userName{
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-family: "仿宋";
+}
+
+.userNameText{
+  font-weight: 700;
+  color: #6b6969;
+}
+
+
+.inTentent{
+  margin-top: 30rpx;
+  width: 520rpx;
+}
+
+.inTentent image{
+  margin-top: 20rpx;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.state{
+   color: white;
+   display: inline-block;
+   padding: 6rpx 10rpx;
+   border-radius: 10rpx;
+   font-size: 24rpx;
+  }
+
+  .telNum{
+  background: #00b3fa;
+  color: white;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  font-family: "仿宋";
+  display: inline-block;
+  padding: 6rpx 20rpx;
+  }
+
+  .text{
+    font-size: 28rpx;
+      font-family: "仿宋";
+  }
+  .place text{
+    color: #369223;
+    font-size: 28rpx;
+    font-family: "仿宋";
+  }

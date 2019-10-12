@@ -1,0 +1,13 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='container'>
+  <view class='email'>
+    <text>邮箱</text>
+    <input bindinput="getEmail" type='email' placeholder='请输入您的邮箱' value='{{inputValue}}'></input>
+  </view>
+  <view class='advice'>
+    <text>反馈意见</text>
+    <textarea bindinput="getTextarea" placeholder='您的意见建议,是我们前进的最大动力!' value='{{textareaValue}}'></textarea>
+  </view>
+
+  <button class='submit_btn' bindtap="sendEmail">反馈</button>
+</view>

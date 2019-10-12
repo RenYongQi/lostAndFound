@@ -1,0 +1,55 @@
+<!--pages/Rlease/Rlease.wxml-->
+<view class='container'>
+  <view class='content_top'>
+    <button class='btn' bindtap='lost_items' style="color:{{font_color}};background:{{bg_color}}">丢失</button>
+    <button class='btn' bindtap='found_items' style="color:{{font_color1}};background:{{bg_color1}}">拾到</button>
+  </view>
+
+  <view class='oMessage' style="display:{{show1}};">
+    <view class='form1'>
+      <label for='Lost_name'>丢失物品</label>
+      <input value="{{theSomething}}" bindinput="insertTheSomething" placeholder="请填写物品名称和特征，比如白色书包" id='Lost_name' type='text'></input>
+    </view>
+    <view class='form1'>
+      <label for='Lost_msg'>丢失地点</label>
+      <input value="{{thePlace}}" bindinput='insertThePlace' placeholder="请填写丢失物品的地点，比如特教楼" id='Lost_msg' type='text'></input>
+    </view>
+    <view class='form2'>
+      <text>上传图片，方便您快速找回\n</text>
+      <view class='sendFile' bind:tap="sendFile" wx:for="{{fileImage}}" wx:key="id">
+        <image src='{{item}}'></image>
+      </view>
+    </view>
+    <view class='text'>
+      <text>请先完善您的个人信息</text>
+      <navigator hover-class='none' url='../person/person'>点击此处</navigator>
+    </view>
+
+    <button bindtap='lostSubmit' class='submit_btn'>发布</button>
+
+  </view>
+
+  <view class='oMessage' style="display:{{show2}};">
+    <view class='form1'>
+      <label for='Lost_name'>拾到物品</label>
+      <input value="{{theSomething}}" bindinput='insertTheSomething' placeholder="请填写物品名称和特征，比如白色书包" id='Lost_name' type='text'></input>
+    </view>
+    <view class='form1'>
+      <label for='Lost_msg'>拾到地点</label>
+      <input value="{{thePlace}}" bindinput='insertThePlace' placeholder="请填写丢失物品的地点，比如特教楼" id='Lost_msg' type='text'></input>
+    </view>
+    <view class='form2'>
+      <text>上传图片，方便失主快速找回\n</text>
+      <view class='sendFile' bind:tap="sendFile" wx:for="{{fileImage}}" wx:key="id">
+        <image src='{{item}}'></image>
+      </view>
+    </view>
+    <view class='text'>
+      <text>请先完善您的个人信息</text>
+      <navigator hover-class='none' url='../person/person'>点击此处</navigator>
+    </view>
+
+    <button bindtap='findSubmit' class='submit_btn'>发布</button>
+
+  </view>
+</view>

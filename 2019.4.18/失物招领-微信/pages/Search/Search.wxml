@@ -1,0 +1,24 @@
+<!--pages/Search/Search.wxml-->
+<view class='serach'>
+<text class='serachonetext'>关键字</text>
+ <input bindinput='userInputValue' type='text' placeholder="请输入关键词搜索" ></input><button class='serach_btn' bindtap="tabSearch" type='botton'>搜索</button>
+ <view class='content'>
+
+    <view class='content_msg' wx:for="{{searchList}}" wx:key="{{index}}">
+      <view class='userImg'>
+        <image src='{{item.usericon}}'></image>
+      </view>
+      <view class='userName'>
+        <text class='userNameText'>{{item.username}}</text>
+        <text bindtap="callTel" data-tel="{{item.usertel}}" class="telNum">联系ta</text>
+        <view class='inTentent'>
+          <text class='state' wx:if="{{item.state=='拾到'}}" style='background:{{stateColor1}}'>{{item.state}}</text>
+          <text class='state' wx:if="{{item.state=='丢失'}}" style='background:{{stateColor}}'>{{item.state}}</text>
+          <text class='text'>  {{item.name}}\n</text>
+          <image wx:if="{{item.picsrc}}" bindtap="imgYulan" data-src = "{{item.picsrc}}" src='{{item.picsrc}}'></image>
+        </view>
+        <view class='place'><text>{{item.place}}</text><text>    {{item.date}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

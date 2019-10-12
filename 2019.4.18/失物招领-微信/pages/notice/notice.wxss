@@ -1,0 +1,42 @@
+/* pages/notice/notice.wxss */
+.content{
+  width: 90%;
+  margin: 30rpx auto;
+  border-bottom: 1rpx solid #e4e0e0;
+}
+.title{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size:38rpx;
+  color: #464343;
+}
+
+.message{
+  margin-left: 76rpx;
+  margin-right:76rpx;
+   margin-bottom: 30rpx;
+   font-size: 32rpx;
+   color: #9e9c9c;
+}
+
+.time{
+  margin-left:76rpx;
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  color: #369223;
+}
+
+.submit_btn{
+  width: 300rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin-top: 50rpx;
+  background: #2add9c;
+  color: white;
+  border-radius: 50rpx;
+  clear: both;
+}
+
+.submit_btn::after{
+  border:none;
+}

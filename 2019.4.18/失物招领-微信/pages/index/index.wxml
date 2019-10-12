@@ -1,0 +1,40 @@
+<!--pages/index/index.wxml-->
+
+<view class='container'>
+  <view class='serach'>
+    <image src='/img/Search.png'></image>
+    <input bind:tap="goToSearch" type='text' placeholder="请输入关键词搜索"></input>
+  </view>
+
+
+  <swiper class='lunBo' indicator-dots="true" circular="true" autoplay="3000" skip-hidden-item-layout="true" bindchange="change">
+    <swiper-item wx:for="{{imgs}}" wx:key='index'>
+      <image class='img {{current === index?"active":""}}' src='{{item}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- <view class='crtlBtn'>
+     <button class='btn' bindtap="isLost">丢失</button>
+     <button class='btn' bindtap="isFond">拾到</button>
+  </view> -->
+  <view class='content'>
+
+    <view class='content_msg' wx:for="{{contentList}}" wx:key="{{index}}">
+      <view class='userImg'>
+        <image src='{{item.usericon}}'></image>
+      </view>
+      <view class='userName'>
+        <text class='userNameText'>{{item.username}}</text>
+        <text bindtap="callTel" data-tel="{{item.usertel}}" class="telNum">联系ta</text>
+        <view class='inTentent'>
+          <text class='state' wx:if="{{item.state=='拾到'}}" style='background:{{stateColor1}}'>{{item.state}}</text>
+          <text class='state' wx:if="{{item.state=='丢失'}}" style='background:{{stateColor}}'>{{item.state}}</text>
+          <text class='text'>  {{item.name}}\n</text>
+          <image wx:if="{{item.picsrc}}" bindtap="imgYulan" data-src = "{{item.picsrc}}" src='{{item.picsrc}}'></image>
+        </view>
+        <view class='place'><text>{{item.place}}</text><text>    {{item.date}}</text></view>
+      </view>
+    </view>
+  </view>
+
+</view>

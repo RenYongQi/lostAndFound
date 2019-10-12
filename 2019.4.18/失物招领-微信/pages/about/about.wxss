@@ -1,0 +1,63 @@
+/* pages/about/about.wxss */
+page{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 0;
+  width: 600rpx;
+  margin: 0 auto;
+  font-family: "仿宋";
+}
+
+.title{
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+}
+
+.title text{
+  font-size:44rpx;
+}
+
+.titleContent text{
+  font-size: 30rpx;
+  color: #a19c9c;
+}
+
+.about text{
+  font-size:30rpx;
+  color: #706f6f;
+}
+
+.aboutContent text{
+  font-size: 26rpx;
+  color: #a19c9c;
+}
+
+.aboutImg{
+  width: 600rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-top:80rpx;
+}
+
+.aboutImg image{
+  
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.aboutMe text{
+  font-size: 26rpx;
+  color: #a19c9c;
+}
+
+.aboutShuoming{
+  margin-top: 20rpx;
+}
+
+.aboutShuoming text{
+  color: #a19c9c;
+}

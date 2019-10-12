@@ -1,0 +1,148 @@
+/* pages/index/index.wxss */
+
+page{
+  padding: 0rpx;
+  margin: 0rpx;
+}
+
+.container{
+  padding: 0rpx;
+  margin: 0rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.serach{
+  background: #f1f1f1;
+  height: 80rpx;
+  width: 715rpx;
+  padding: 20rpx;
+  position: relative;
+}
+
+.serach image{
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  position: absolute;
+  top: 31rpx;
+  left: 30rpx;
+  z-index: 2;
+}
+
+.serach input{
+  float: left;
+  background: white;
+  height: 80rpx;
+  border-radius: 10rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.content{
+  height: 1000rpx;
+  width: 700rpx;
+  margin: 30rpx auto;
+  clear: both;
+}
+
+.lunBo{
+  margin: 20rpx auto;
+  width: 700rpx;
+  height: 350rpx;
+}
+
+
+.img{
+  width: 700rpx;
+  height: 350rpx;
+  border-radius: 8rpx;
+  opacity: .8;
+  /* transform:matrix(0.586,0.8,-0.8,0.586,40,20); */
+  /* transform:rotate(100deg); */
+  /* transform:rotateX(360deg); */
+  /* transform:rotateY(300deg); */
+  transform:skew(5deg,20deg);
+   
+}
+.active{
+  transform:none;
+ transition: transform 1s;
+}
+
+.content_msg{
+  width: 100%;
+  background: white;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #e4e0e0;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+
+
+.userImg{
+  float: left;
+}
+
+.userImg image{
+  margin-top: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+}
+
+.userName{
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-family: "仿宋";
+}
+
+.userNameText{
+  font-weight: 700;
+  color: #6b6969;
+}
+
+
+.inTentent{
+  margin-top: 30rpx;
+  width: 520rpx;
+}
+
+.inTentent image{
+  margin-top: 20rpx;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.state{
+   color: white;
+   display: inline-block;
+   padding: 6rpx 10rpx;
+   border-radius: 10rpx;
+   font-size: 24rpx;
+  }
+
+  .telNum{
+  background: #00b3fa;
+  color: white;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+  font-family: "仿宋";
+  display: inline-block;
+  padding: 6rpx 20rpx;
+  }
+
+  .text{
+    font-size: 28rpx;
+      font-family: "仿宋";
+  }
+  .place text{
+    color: #369223;
+    font-size: 28rpx;
+    font-family: "仿宋";
+  }
+

@@ -1,0 +1,37 @@
+<!--pages/Me/Me.wxml-->
+<view class='container'>
+
+  <view class='content-top'>
+    <view>
+      <image class='userImg' src='{{userImg}}'></image>
+      <text class='userInfo userName'>{{userName}}</text>
+      <text class='userInfo userCity'>{{userProvince}}省(市) {{userCity}}区(县)</text>
+    </view>
+  </view>
+
+  <view class='content-bottom'>
+    <view class='box'>
+      <navigator hover-class='none' class='navgata' url='../myfb/myfb'>
+        <image src='/img/Fabu.png'></image>
+        <text>我的发布</text>
+      </navigator>
+      <navigator hover-class='none' class='navgata' url='../about/about'>
+        <image src='/img/About.png'></image>
+        <text>关于我们</text>
+      </navigator>
+      <navigator hover-class='none' class='navgata' url='../feedback/feedback'>
+        <image src='/img/Feedback.png'></image>
+        <text>反馈意见</text>
+      </navigator>
+      <navigator hover-class='none' class='navgata' url='../person/person'>
+        <image src='/img/Pmessage.png'></image>
+        <text>个人信息</text>
+      </navigator>
+      <navigator hover-class='none' class='navgata' url="../notice/notice">
+      <image src='/img/notice.png'></image>
+        <text>查看公告</text>
+      </navigator>
+    </view>
+  </view>
+
+</view>

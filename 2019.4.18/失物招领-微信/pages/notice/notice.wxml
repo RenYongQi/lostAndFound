@@ -1,0 +1,9 @@
+<!--pages/notice/notice.wxml-->
+
+<view class='content' wx:for="{{noticeList}}" wx:key="index">
+ <view class='title'><text>{{item.title}}</text></view>
+ <view class='message'><text>{{item.content}}</text></view>
+ <view class='time'><text>{{item.date}}</text></view>
+</view>
+<button bindtap='insertNotice' class='submit_btn'>发布</button>
+

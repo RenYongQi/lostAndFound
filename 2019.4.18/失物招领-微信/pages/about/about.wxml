@@ -1,0 +1,50 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <view class='title'>
+    <text>失物招领系统</text>
+  </view>
+  <view class='titleContent'>
+    <text>帮你找回遗失的美好</text>
+  </view>
+
+
+  <view class='about'>
+    <text>关于</text>
+    <view class='aboutContent'>
+      <text>[失物招领系统]是一个帮助在校学生快速找回丢失物品的信息服务平台。</text>
+    </view>
+    <view class='aboutImg'>
+      <image src='{{icon}}'></image>
+      <view class='aboutMe'>
+        <text>任永琪\n</text>
+        <text>Tips:野生程序员一枚\n</text>
+        <text>Wechat:ryq278885883\n</text>
+        <text>Email:278885883@qq.com</text>
+      </view>
+    </view>
+    <view style='margin-top:30rpx;'>
+      <text>说明</text>
+      <view  class='aboutShuoming'>
+        <text class='aboutShuomingText'>Tips:本小程序为毕业设计用</text>
+      </view>
+    </view>
+
+    <view style='margin-top:30rpx;'>
+      <text>感谢</text>
+      <view  class='aboutShuoming'>
+        <text class='aboutShuomingText'>阿里云矢量图标：https://iconfont.com\n</text>
+        <text class='aboutShuomingText'>小程序图标：https://www.logoko.com.cn\n</text>
+        <text class='aboutShuomingText'>帮助我解决很多问题的舍友---Shao</text>
+
+      </view>
+    </view>
+
+    <view style='margin-top:30rpx;'>
+      <text>小弟联系方式</text>
+      <view  class='aboutShuoming'>
+        <text class='aboutShuomingText'>QQ:278885883\n</text>
+        <text class='aboutShuomingText'>Tel:13896181997</text>
+      </view>
+    </view>
+  </view>
+</view>

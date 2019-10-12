@@ -1,0 +1,26 @@
+<!--pages/person/person.wxml-->
+<view class='container'>
+  <view class='content-top'>
+    <view>
+      <image class='userImg' src='{{userImg}}'></image>
+      <text class='userInfo userName'>{{userName}}</text>
+      <text class='userInfo userCity'>{{userProvince}}省(市) {{userCity}}区(县)</text>
+    </view>
+  </view>
+
+  <view class='content'>
+    <view class="content1">
+      <label for='name'>姓名</label>
+      <input id='name' value='{{name}}' bindinput="updateUserName" type='text' placeholder='请输入姓名'></input>
+    </view>
+    <view class='content1'>
+      <label for='professional'>专业</label>
+      <input id='professional' value='{{professional}}' bindinput="updateUserProfessional" type='text' placeholder='请输入专业'></input>
+    </view>
+    <view class='content1'>
+      <label for='tel'>联系方式</label>
+      <input id='tel' value='{{telnumber}}' bindinput="updateUserTelNumber" type='tel' placeholder='请输入手机号码'></input>
+    </view>
+  </view>
+  <button class='submit_btn' bindtap='saveUserInfo'>保存</button>
+</view>
